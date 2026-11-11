@@ -1,0 +1,50 @@
+.container {
+    width: 1500px;
+    height: 750px;
+
+    background: linear-gradient(orange, white, green);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+
+    background: linear-gradient(
+        orange 0%,
+        orange 33.33%,
+        white 33.33%,
+        white 66.66%,
+        green 66.66%,
+        green 100%
+    );
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chakra {
+    width: 55px;
+    height: 55px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+}
+
+.flag:hover {
+    transform: scale(2);
+    transition: transform 1s ease-in-out;
+}
